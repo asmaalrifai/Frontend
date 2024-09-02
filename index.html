@@ -1,174 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    <!-- rows -> tr
-        columns -> td 
-        make the cell spetial, if its heading -> th
-         -->
-    <table border="1">
-      <tr>
-        <th>name</th>
-        <th>age</th>
-        <th>salary</th>
-      </tr>
-      <tr>
-        <td>Ahmed</td>
-        <td>25</td>
-        <td>2400</td>
-      </tr>
-      <tr>
-        <td>Asma</td>
-        <td>22</td>
-        <td>3000</td>
-      </tr>
-    </table>
-
-    <hr />
-    <!-- organizing the table
-    thead -> to write the head of the table
-    tbody -> to write all the body in the table
-    tfoot -> to write the results (total - sum -final - etc.)
-    tfoot will always be in the head of the table no matter the code position
-    tfoot will always be in the end of the table no matter the code position -->
-    <table border="1">
-      <!-- example of tfoot position -->
-      <tfoot>
-        <tr>
-          <td>tst</td>
-          <td>5400</td>
-        </tr>
-      </tfoot>
-
-      <thead>
-        <tr>
-          <th>name</th>
-          <th>age</th>
-          <th>salary</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Ahmed</td>
-          <td>25</td>
-          <td>2400</td>
-        </tr>
-        <tr>
-          <td>Asma</td>
-          <td>22</td>
-          <td>3000</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>total</td>
-          <td>5400</td>
-        </tr>
-      </tfoot>
-    </table>
-
-    <hr />
-    <!-- caption: to discribe the table, above the table in the middle -->
-    <table border="1">
-      <caption>
-        Employees
-      </caption>
-      <thead>
-        <tr>
-          <th>name</th>
-          <th>age</th>
-          <th>salary</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Ahmed</td>
-          <td>25</td>
-          <td>2400</td>
-        </tr>
-        <tr>
-          <td>Asma</td>
-          <td>22</td>
-          <td>3000</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>total</td>
-          <td>5400</td>
-        </tr>
-      </tfoot>
-    </table>
-
-    <hr />
-    <!-- colspan: merge sevral colomn cells
-         rowspan: merge sevral row cells  -->
-    <table border="1">
-        <caption>Employees</caption>
-      <thead>
-        <tr>
-          <th>name</th>
-          <th>age</th>
-          <th>salary</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Ahmed</td>
-          <td>25</td>
-          <td>2400</td>
-          <td rowspan="2">Yemen</td>
-        </tr>
-        <tr>
-          <td>Asma</td>
-          <td>22</td>
-          <td>3000</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>total</td>
-          <td colspan="2" align="center">5400</td>
-        </tr>
-      </tfoot>
-    </table>
+</head>
+<body>
+    
+    <!-- unordered list -->
+    <ul>
+        <li>Asma</li>
+        <li>Omar</li>
+        <li>Ahmed</li>
+        <li>Irem</li>
+    </ul>
 
     <hr>
-    <!-- coloring the table -->
-    <table border="1" bgcolor="red">
-        <caption>
-          Employees
-        </caption>
-        <thead bgcolor="blue">
-          <tr>
-            <th>name</th>
-            <th>age</th>
-            <th>salary</th>
-          </tr>
-        </thead>
-        <tbody bgcolor="yellow">
-          <tr>
-            <td>Ahmed</td>
-            <td>25</td>
-            <td>2400</td>
-          </tr>
-          <tr>
-            <td bgcolor="green">Asma</td>
-            <td>22</td>
-            <td>3000</td>
-          </tr>
-        </tbody>
-        <tfoot bgcolor="white">
-          <tr>
-            <td>total</td>
-            <td>5400</td>
-          </tr>
-        </tfoot>
-      </table>
+    <!-- orederd list -->
+     <ol>
+        <li>Milk</li>
+        <li>oat</li>
+        <li>Water</li>
+     </ol>
 
-  </body>
+     <hr>
+    <!-- types for orederd list -->
+     <ol type="1">
+        <li>Milk</li>
+        <li>oat</li>
+        <li>Water</li>
+     </ol>
+     <ol type="A">
+        <li>Milk</li>
+        <li>oat</li>
+        <li>Water</li>
+     </ol>
+     <ol type="i">
+        <li>Milk</li>
+        <li>oat</li>
+        <li>Water</li>
+     </ol>
+
+     <hr>
+     <!-- reverse and start -->
+     <ol reversed start="50">
+        <li>Milk</li>
+        <li>oat</li>
+        <li>Water</li>
+     </ol>
+
+     <hr>
+     <!-- not that used, <dl> discription list -->
+        <dl>
+            <dt>Iphone Pro</dt>
+            <dd>has better cameeras</dd>
+            <dd>You can find it in Jarir</dd>
+            <dt>galaxy s24</dt>
+            <dd>Better user interfaces</dd>
+        </dl>
+
+</body>
 </html>
