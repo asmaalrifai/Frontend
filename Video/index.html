@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- source in different tag to support the different referenc -->
+    <video>
+        <source src="video/mouse.mp4" type="video/mp4">
+        <source src="video/mouse.webm" type="video/webm">
+        <source src="video/mouse.ogg" type="video/ogg">
+        Your Browser Does Not Support The Video Element.
+    </video>
+
+    <!-- to control the video -->
+    <video controls>
+        <source src="video/mouse.mp4" type="video/mp4">
+        <source src="video/mouse.webm" type="video/webm">
+        <source src="video/mouse.ogg" type="video/ogg">
+        Your Browser Does Not Support The Video Element.
+    </video>
+
+    <!-- change the size 
+     % to the screen size-->
+    <video controls height="400" width="100%">
+        <source src="video/mouse.mp4" type="video/mp4">
+        <source src="video/mouse.webm" type="video/webm">
+        <source src="video/mouse.ogg" type="video/ogg">
+        Your Browser Does Not Support The Video Element.
+    </video>
+
+    <!-- loop the video -->
+    <video controls loop>
+        <source src="video/mouse.mp4" type="video/mp4">
+        <source src="video/mouse.webm" type="video/webm">
+        <source src="video/mouse.ogg" type="video/ogg">
+        Your Browser Does Not Support The Video Element.
+    </video>
+
+    <!-- mute the video automatically -->
+    <video controls muted>
+        <source src="video/mouse.mp4" type="video/mp4">
+        <source src="video/mouse.webm" type="video/webm">
+        <source src="video/mouse.ogg" type="video/ogg">
+        Your Browser Does Not Support The Video Element.
+    </video>
+
+    <!-- play the video automatically 
+     must be muted to work the autoplay -->
+    <video controls muted autoplay>
+        <source src="video/mouse.mp4" type="video/mp4">
+        <source src="video/mouse.webm" type="video/webm">
+        <source src="video/mouse.ogg" type="video/ogg">
+        Your Browser Does Not Support The Video Element.
+    </video>
+
+    <!-- make a photo as a background -->
+    <video controls poster="photo.jpg">
+        <source src="video/mouse.mp4" type="video/mp4">
+        <source src="video/mouse.webm" type="video/webm">
+        <source src="video/mouse.ogg" type="video/ogg">
+        Your Browser Does Not Support The Video Element.
+    </video>
+
+    <!-- preload= 'auto' -> uplload the video automatically with the page
+    preload= 'none' -> Not uplload the video automatically with the page
+    preload= 'metadata' -> videow information (title, discription), not the videow itself-->
+    <video controls preload="auto">
+        <source src="video/mouse.mp4" type="video/mp4">
+        <source src="video/mouse.webm" type="video/webm">
+        <source src="video/mouse.ogg" type="video/ogg">
+        Your Browser Does Not Support The Video Element.
+    </video>
+
+    <!-- videos captions 
+     must be another .vtt file
+     default to make tha caotion work witht the video  -->
+    <video controls>
+        <source src="video/mouse.mp4" type="video/mp4">
+        <source src="video/mouse.webm" type="video/webm">
+        <source src="video/mouse.ogg" type="video/ogg">
+        Your Browser Does Not Support The Video Element.
+        <track src="en.vtt" kind="subtitles" label="English">
+        <track default src="ar.vtt" kind="subtitles" label="Arabic">
+    </video>
+
+
+</body>
+</html>
