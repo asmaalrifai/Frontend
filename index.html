@@ -1,92 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-    <!-- source in different tag to support the different referenc -->
-    <video>
-        <source src="video/mouse.mp4" type="video/mp4">
-        <source src="video/mouse.webm" type="video/webm">
-        <source src="video/mouse.ogg" type="video/ogg">
-        Your Browser Does Not Support The Video Element.
-    </video>
+  </head>
+  <body>
+    <!-- rows -> tr
+        columns -> td 
+        make the cell spetial, if its heading -> th
+         -->
+    <table border="1">
+      <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>salary</th>
+      </tr>
+      <tr>
+        <td>Ahmed</td>
+        <td>25</td>
+        <td>2400</td>
+      </tr>
+      <tr>
+        <td>Asma</td>
+        <td>22</td>
+        <td>3000</td>
+      </tr>
+    </table>
 
-    <!-- to control the video -->
-    <video controls>
-        <source src="video/mouse.mp4" type="video/mp4">
-        <source src="video/mouse.webm" type="video/webm">
-        <source src="video/mouse.ogg" type="video/ogg">
-        Your Browser Does Not Support The Video Element.
-    </video>
+    <hr />
+    <!-- organizing the table
+    thead -> to write the head of the table
+    tbody -> to write all the body in the table
+    tfoot -> to write the results (total - sum -final - etc.)
+    tfoot will always be in the head of the table no matter the code position
+    tfoot will always be in the end of the table no matter the code position -->
+    <table border="1">
+      <!-- example of tfoot position -->
+      <tfoot>
+        <tr>
+          <td>tst</td>
+          <td>5400</td>
+        </tr>
+      </tfoot>
 
-    <!-- change the size 
-     % to the screen size-->
-    <video controls height="400" width="100%">
-        <source src="video/mouse.mp4" type="video/mp4">
-        <source src="video/mouse.webm" type="video/webm">
-        <source src="video/mouse.ogg" type="video/ogg">
-        Your Browser Does Not Support The Video Element.
-    </video>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>age</th>
+          <th>salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ahmed</td>
+          <td>25</td>
+          <td>2400</td>
+        </tr>
+        <tr>
+          <td>Asma</td>
+          <td>22</td>
+          <td>3000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>total</td>
+          <td>5400</td>
+        </tr>
+      </tfoot>
+    </table>
 
-    <!-- loop the video -->
-    <video controls loop>
-        <source src="video/mouse.mp4" type="video/mp4">
-        <source src="video/mouse.webm" type="video/webm">
-        <source src="video/mouse.ogg" type="video/ogg">
-        Your Browser Does Not Support The Video Element.
-    </video>
+    <hr />
+    <!-- caption: to discribe the table, above the table in the middle -->
+    <table border="1">
+      <caption>
+        Employees
+      </caption>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>age</th>
+          <th>salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ahmed</td>
+          <td>25</td>
+          <td>2400</td>
+        </tr>
+        <tr>
+          <td>Asma</td>
+          <td>22</td>
+          <td>3000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>total</td>
+          <td>5400</td>
+        </tr>
+      </tfoot>
+    </table>
 
-    <!-- mute the video automatically -->
-    <video controls muted>
-        <source src="video/mouse.mp4" type="video/mp4">
-        <source src="video/mouse.webm" type="video/webm">
-        <source src="video/mouse.ogg" type="video/ogg">
-        Your Browser Does Not Support The Video Element.
-    </video>
+    <hr />
+    <!-- colspan: merge sevral colomn cells
+         rowspan: merge sevral row cells  -->
+    <table border="1">
+        <caption>Employees</caption>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>age</th>
+          <th>salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ahmed</td>
+          <td>25</td>
+          <td>2400</td>
+          <td rowspan="2">Yemen</td>
+        </tr>
+        <tr>
+          <td>Asma</td>
+          <td>22</td>
+          <td>3000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>total</td>
+          <td colspan="2" align="center">5400</td>
+        </tr>
+      </tfoot>
+    </table>
 
-    <!-- play the video automatically 
-     must be muted to work the autoplay -->
-    <video controls muted autoplay>
-        <source src="video/mouse.mp4" type="video/mp4">
-        <source src="video/mouse.webm" type="video/webm">
-        <source src="video/mouse.ogg" type="video/ogg">
-        Your Browser Does Not Support The Video Element.
-    </video>
+    <hr>
+    <!-- coloring the table -->
+    <table border="1" bgcolor="red">
+        <caption>
+          Employees
+        </caption>
+        <thead bgcolor="blue">
+          <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>salary</th>
+          </tr>
+        </thead>
+        <tbody bgcolor="yellow">
+          <tr>
+            <td>Ahmed</td>
+            <td>25</td>
+            <td>2400</td>
+          </tr>
+          <tr>
+            <td bgcolor="green">Asma</td>
+            <td>22</td>
+            <td>3000</td>
+          </tr>
+        </tbody>
+        <tfoot bgcolor="white">
+          <tr>
+            <td>total</td>
+            <td>5400</td>
+          </tr>
+        </tfoot>
+      </table>
 
-    <!-- make a photo as a background -->
-    <video controls poster="photo.jpg">
-        <source src="video/mouse.mp4" type="video/mp4">
-        <source src="video/mouse.webm" type="video/webm">
-        <source src="video/mouse.ogg" type="video/ogg">
-        Your Browser Does Not Support The Video Element.
-    </video>
-
-    <!-- preload= 'auto' -> uplload the video automatically with the page
-    preload= 'none' -> Not uplload the video automatically with the page
-    preload= 'metadata' -> videow information (title, discription), not the videow itself-->
-    <video controls preload="auto">
-        <source src="video/mouse.mp4" type="video/mp4">
-        <source src="video/mouse.webm" type="video/webm">
-        <source src="video/mouse.ogg" type="video/ogg">
-        Your Browser Does Not Support The Video Element.
-    </video>
-
-    <!-- videos captions 
-     must be another .vtt file
-     default to make tha caotion work witht the video  -->
-    <video controls>
-        <source src="video/mouse.mp4" type="video/mp4">
-        <source src="video/mouse.webm" type="video/webm">
-        <source src="video/mouse.ogg" type="video/ogg">
-        Your Browser Does Not Support The Video Element.
-        <track src="en.vtt" kind="subtitles" label="English">
-        <track default src="ar.vtt" kind="subtitles" label="Arabic">
-    </video>
-
-
-</body>
+  </body>
 </html>
