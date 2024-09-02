@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- this audio will not appear in the page -->
+    <audio >
+        <source src="Song.mp3" type="audio/mpeg">
+        <!-- add all other references, '.wav', '.ogg' -->
+         <!-- file: mp3 -> type: audio/mpeg
+          file: wav -> type: audio/wav
+          file: ogg -> type: audo/ogg -->
+        <source src="Song.wav" type="audio/wav">
+        <source src="Song.ogg" type="audio/ogg">
+    </audio>
+
+    <!-- to show the audio controls -->
+    <audio controls>
+        <source src="Song.mp3" type="audio/mpeg">
+        <source src="Song.wav" type="audio/wav">
+        <source src="Song.ogg" type="audio/ogg">
+    </audio>
+
+    <!-- to make audio loop -->
+    <audio controls loop>
+        <source src="Song.mp3" type="audio/mpeg">
+        <source src="Song.wav" type="audio/wav">
+        <source src="Song.ogg" type="audio/ogg">
+    </audio>
+
+    <!-- to make the audio default to be muted -->
+    <audio controls loop muted>
+        <source src="Song.mp3" type="audio/mpeg">
+        <source src="Song.wav" type="audio/wav">
+        <source src="Song.ogg" type="audio/ogg">
+    </audio>
+
+    <!-- play the audio automatically
+     not supported in some browsers like chrome -->
+    <audio controls loop autoplay>
+        <source src="Song.mp3" type="audio/mpeg">
+        <source src="Song.wav" type="audio/wav">
+        <source src="Song.ogg" type="audio/ogg">
+    </audio>
+
+    <!-- ig the browser dos not support any of the audio types -->
+    <audio controls loop muted>
+        <source src="Song.mp3" type="audio/mpeg">
+        <source src="Song.wav" type="audio/wav">
+        <source src="Song.ogg" type="audio/ogg">
+        Your browser does not support any of the audio types
+    </audio>
+
+</body>
+</html>
