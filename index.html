@@ -1,79 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-</head>
-<body>
-   
-   <a href="https://www.google.com">test</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
 
-   <hr>
-   <!-- target 
-    _self: open the link in the same tab (defualt value)
-    _blank: open the link in the new tab
-    -->
-    <a target="_self" href="https://www.google.com">self</a>
-    <a target="_blank" href="https://www.facebook.com" rel="noopener">blank</a>
+    <form>
 
-    <hr>
-    <!-- if i dont write the 'https', the reference would think it is a link for the same site to another page (ex: index/www.google.com)
-    writing http/s referese to move to a whole another site -->
-    <!-- URL
-     Absolute: outside links, http/s
-     Relative: inside links, test.html -->
-    <a href="test.html">refer to another page</a>
-    <br>
-    <a href="dubai.jpg">img</a>
-
-    <hr>
-    <!-- the picture is the link -->
-     <a href="test.html">
-      <img src="dubai.jpg" alt="dubai" width="200">
-     </a>
-
-     <hr>
-     <hr>
-     <!-- practice -->
-      <a href="#sec1">sec1</a>
-      <a href="#sec2">sec2</a>
-      <a href="#sec3">sec3</a>
-      <a href="#sec4">sec4</a>
-
-      <section id="sec1">
-         <h2>Section 1</h2>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ullam! Vitae quae minus quia ratione delectus natus, omnis, commodi hic, aperiam dolorem sint corrupti dolore ea fugiat nihil iusto quisquam?</p>
-      </section>
-      <hr>
-
-      <section id="sec2">
-         <h2>Section 2</h2>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ullam! Vitae quae minus quia ratione delectus natus, omnis, commodi hic, aperiam dolorem sint corrupti dolore ea fugiat nihil iusto quisquam?</p>
-      </section>
-      <hr>
-
-      <section id="sec3">
-         <h2>Section 3</h2>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ullam! Vitae quae minus quia ratione delectus natus, omnis, commodi hic, aperiam dolorem sint corrupti dolore ea fugiat nihil iusto quisquam?</p>
-      </section>
-      <hr>
-
-      <section id="sec4">
-         <h2>Section 4</h2>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ullam! Vitae quae minus quia ratione delectus natus, omnis, commodi hic, aperiam dolorem sint corrupti dolore ea fugiat nihil iusto quisquam?</p>
-      </section>
-      <hr>
-
-      <hr>
-      <!-- refer to email, phone -->
-       <a href="mailto:asma.o.alrifai@gmail.com">email</a>
-       <a href="tel:55555555">phone</a>
-
-       <hr>
-       <!-- write javascript code -->
-        <a href="javascript:alert('hello world');">javascript</a>
+      <fieldset>
+         <legend>Legend</legend>
 
 
-</body>
+      <!-- get info -->
+      <div>
+        <label for="txt">text</label>
+        <input type="text" placeholder="text" id="txt"  required/>
+      </div>
+
+      <div>
+        <label for="num">number</label>
+        <input type="number" placeholder="number" id="num"/>
+      </div>
+
+      <div>
+        <label for="pass">password</label>
+        <input type="password" placeholder="password" id="pass" required/>
+      </div>
+
+      <div>
+        <label for="em">email</label>
+        <input type="email" placeholder="email" id="em"/>
+      </div>
+
+      <div>
+        <label for="tel">tel</label>
+        <input type="tel" placeholder="tel" id="tel"/>
+      </div>
+
+      <!-- button -->
+       <div>
+         <!-- default value is 'Submit' -->
+         <input type="submit" value="send">
+         <!-- value for text input -->
+          <input type="text" value="Asma" placeholder="asma">
+       </div>
+
+      </fieldset>
+    </form>
+  </body>
 </html>
