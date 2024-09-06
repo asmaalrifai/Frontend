@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
 </head>
 <body>
-    
-    <!-- unordered list -->
-    <ul>
-        <li>Asma</li>
-        <li>Omar</li>
-        <li>Ahmed</li>
-        <li>Irem</li>
-    </ul>
+   
+   <a href="https://www.google.com">test</a>
+
+   <hr>
+   <!-- target 
+    _self: open the link in the same tab (defualt value)
+    _blank: open the link in the new tab
+    -->
+    <a target="_self" href="https://www.google.com">self</a>
+    <a target="_blank" href="https://www.facebook.com" rel="noopener">blank</a>
 
     <hr>
-    <!-- orederd list -->
-     <ol>
-        <li>Milk</li>
-        <li>oat</li>
-        <li>Water</li>
-     </ol>
+    <!-- if i dont write the 'https', the reference would think it is a link for the same site to another page (ex: index/www.google.com)
+    writing http/s referese to move to a whole another site -->
+    <!-- URL
+     Absolute: outside links, http/s
+     Relative: inside links, test.html -->
+    <a href="test.html">refer to another page</a>
+    <br>
+    <a href="dubai.jpg">img</a>
+
+    <hr>
+    <!-- the picture is the link -->
+     <a href="test.html">
+      <img src="dubai.jpg" alt="dubai" width="200">
+     </a>
 
      <hr>
-    <!-- types for orederd list -->
-     <ol type="1">
-        <li>Milk</li>
-        <li>oat</li>
-        <li>Water</li>
-     </ol>
-     <ol type="A">
-        <li>Milk</li>
-        <li>oat</li>
-        <li>Water</li>
-     </ol>
-     <ol type="i">
-        <li>Milk</li>
-        <li>oat</li>
-        <li>Water</li>
-     </ol>
-
      <hr>
-     <!-- reverse and start -->
-     <ol reversed start="50">
-        <li>Milk</li>
-        <li>oat</li>
-        <li>Water</li>
-     </ol>
+     <!-- practice -->
+      <a href="#sec1">sec1</a>
+      <a href="#sec2">sec2</a>
+      <a href="#sec3">sec3</a>
+      <a href="#sec4">sec4</a>
 
-     <hr>
-     <!-- not that used, <dl> discription list -->
-        <dl>
-            <dt>Iphone Pro</dt>
-            <dd>has better cameeras</dd>
-            <dd>You can find it in Jarir</dd>
-            <dt>galaxy s24</dt>
-            <dd>Better user interfaces</dd>
-        </dl>
+      <section id="sec1">
+         <h2>Section 1</h2>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ullam! Vitae quae minus quia ratione delectus natus, omnis, commodi hic, aperiam dolorem sint corrupti dolore ea fugiat nihil iusto quisquam?</p>
+      </section>
+      <hr>
+
+      <section id="sec2">
+         <h2>Section 2</h2>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ullam! Vitae quae minus quia ratione delectus natus, omnis, commodi hic, aperiam dolorem sint corrupti dolore ea fugiat nihil iusto quisquam?</p>
+      </section>
+      <hr>
+
+      <section id="sec3">
+         <h2>Section 3</h2>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ullam! Vitae quae minus quia ratione delectus natus, omnis, commodi hic, aperiam dolorem sint corrupti dolore ea fugiat nihil iusto quisquam?</p>
+      </section>
+      <hr>
+
+      <section id="sec4">
+         <h2>Section 4</h2>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, ullam! Vitae quae minus quia ratione delectus natus, omnis, commodi hic, aperiam dolorem sint corrupti dolore ea fugiat nihil iusto quisquam?</p>
+      </section>
+      <hr>
+
+      <hr>
+      <!-- refer to email, phone -->
+       <a href="mailto:asma.o.alrifai@gmail.com">email</a>
+       <a href="tel:55555555">phone</a>
+
+       <hr>
+       <!-- write javascript code -->
+        <a href="javascript:alert('hello world');">javascript</a>
+
 
 </body>
 </html>
