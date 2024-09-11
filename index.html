@@ -6,48 +6,65 @@
     <title>Document</title>
   </head>
   <body>
-
-    <form>
-
-      <fieldset>
-         <legend>Legend</legend>
-
-
-      <!-- get info -->
+    <!-- action: go to another backen page (data is not sent)
+     default is reload the page -->
+    <form action="test.php">
+      <h3>send data to another page</h3>
       <div>
-        <label for="txt">text</label>
-        <input type="text" placeholder="text" id="txt"  required/>
-      </div>
-
-      <div>
-        <label for="num">number</label>
-        <input type="number" placeholder="number" id="num"/>
+        <label for="user">text</label>
+        <input type="text" placeholder="user" id="user" required />
       </div>
 
       <div>
         <label for="pass">password</label>
-        <input type="password" placeholder="password" id="pass" required/>
+        <input type="password" placeholder="password" id="pass" required />
       </div>
 
       <div>
-        <label for="em">email</label>
-        <input type="email" placeholder="email" id="em"/>
+        <input type="submit" value="send" />
+      </div>
+    </form>
+
+    <hr />
+    <!-- sending data -->
+    <form action="">
+      <h3>send data to database field</h3>
+      <div>
+        <label for="user">text</label>
+        <!-- name: send the data to the database attripute -->
+        <input type="text" id="user" name="username" />
       </div>
 
       <div>
-        <label for="tel">tel</label>
-        <input type="tel" placeholder="tel" id="tel"/>
+        <label for="pass">password</label>
+        <input type="password" id="pass" name="password" />
       </div>
 
-      <!-- button -->
-       <div>
-         <!-- default value is 'Submit' -->
-         <input type="submit" value="send">
-         <!-- value for text input -->
-          <input type="text" value="Asma" placeholder="asma">
-       </div>
+      <div>
+        <input type="submit" value="send" />
+      </div>
+    </form>
 
-      </fieldset>
+    <hr />
+    <!-- Methods
+     get: shoe the user inputs in the URL (default)
+     post: gide the user inputs from the URL (still can be rach from inspect -> network -> Name -> payload) -->
+    <form method="post">
+      <h3>Hide user input from url</h3>
+      <div>
+        <label for="user">text</label>
+        <!-- name: send the data to the database attripute -->
+        <input type="text" id="user" name="username" />
+      </div>
+
+      <div>
+        <label for="pass">password</label>
+        <input type="password" id="pass" name="password" />
+      </div>
+
+      <div>
+        <input type="submit" value="send" />
+      </div>
     </form>
   </body>
 </html>
