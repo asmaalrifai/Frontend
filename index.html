@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- action: go to another backen page (data is not sent)
-     default is reload the page -->
-    <form action="test.php">
-      <h3>send data to another page</h3>
-      <div>
-        <label for="user">text</label>
-        <input type="text" placeholder="user" id="user" required />
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <!-- color chooser -->
+  <form action="">
+    <div>
+      <label for="color">color</label>
+      <input id="color" type="color">
+    </div>
+  </form>
 
-      <div>
-        <label for="pass">password</label>
-        <input type="password" placeholder="password" id="pass" required />
-      </div>
+  <hr>
+  <!-- file chooser -->
+  <form>
+    <div>
+      <label for="file">file</label>
+      <input id="file" type="file">
+    </div>
+  </form>
 
-      <div>
-        <input type="submit" value="send" />
-      </div>
-    </form>
+  <hr>
+  <!-- user range chooser -->
+  <form>
+    <div>
+      <label for="range">range step1</label>
+      <!-- min/max: the range min amd max
+       step: defualt is 1, num of steps to max
+       value: defaul is 50% -->
+      <input id="range" type="range" min="0" max="10" value="10">
+    </div>
 
-    <hr />
-    <!-- sending data -->
-    <form action="">
-      <h3>send data to database field</h3>
-      <div>
-        <label for="user">text</label>
-        <!-- name: send the data to the database attripute -->
-        <input type="text" id="user" name="username" />
-      </div>
+    <div></div>
+      <label for="range">range step2</label>
+      <input id="range" type="range" min="0" max="10" step="2" value="4">
+    </div>
 
-      <div>
-        <label for="pass">password</label>
-        <input type="password" id="pass" name="password" />
-      </div>
+    <div></div>
+      <label for="range">range step3</label>
+      <input id="range" type="range" min="0" max="10" step="3" value="0">
+    </div>
+  </form>
 
-      <div>
-        <input type="submit" value="send" />
-      </div>
-    </form>
+  <hr>
+  <!-- file chooser -->
+  <form>
+    <div>
+      <label for="number">number</label>
+      <input id="number" type="number" min="5" max="10">
+    </div>
 
-    <hr />
-    <!-- Methods
-     get: shoe the user inputs in the URL (default)
-     post: gide the user inputs from the URL (still can be rach from inspect -> network -> Name -> payload) -->
-    <form method="post">
-      <h3>Hide user input from url</h3>
-      <div>
-        <label for="user">text</label>
-        <!-- name: send the data to the database attripute -->
-        <input type="text" id="user" name="username" />
-      </div>
+    <div>
+      <label for="number">number step2</label>
+      <input id="number" type="number" min="0" max="10" step="2">
+    </div>
+  </form>
 
-      <div>
-        <label for="pass">password</label>
-        <input type="password" id="pass" name="password" />
-      </div>
+  <hr>
+  <!-- search input -->
+  <form>
+    <div>
+      <label for="search">search</label>
+      <input id="search" type="search">
+    </div>
+  </form>
 
-      <div>
-        <input type="submit" value="send" />
-      </div>
-    </form>
-  </body>
+  <hr>
+  <!-- url input -->
+  <form>
+    <div>
+      <label for="url">url</label>
+      <input id="url" type="url">
+    </div>
+  </form>
+
+  <hr>
+  <!-- hidden input: if i dont want to show the user the info but i wanna send it with the form to the backend -->
+  <form>
+    <div>
+      <label for="hidden">hidden</label>
+      <input id="hidden" type="hidden">
+    </div>
+  </form>
+
+</body>
 </html>
