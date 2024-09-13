@@ -7,84 +7,42 @@
 </head>
 <body>
   
-  <!-- color chooser -->
   <form action="">
-    <div>
-      <label for="color">color</label>
-      <input id="color" type="color">
-    </div>
-  </form>
-
-  <hr>
-  <!-- file chooser -->
-  <form>
-    <div>
-      <label for="file">file</label>
-      <input id="file" type="file">
-    </div>
-  </form>
-
-  <hr>
-  <!-- user range chooser -->
-  <form>
-    <div>
-      <label for="range">range step1</label>
-      <!-- min/max: the range min amd max
-       step: defualt is 1, num of steps to max
-       value: defaul is 50% -->
-      <input id="range" type="range" min="0" max="10" value="10">
-    </div>
-
-    <div></div>
-      <label for="range">range step2</label>
-      <input id="range" type="range" min="0" max="10" step="2" value="4">
-    </div>
-
-    <div></div>
-      <label for="range">range step3</label>
-      <input id="range" type="range" min="0" max="10" step="3" value="0">
-    </div>
-  </form>
-
-  <hr>
-  <!-- file chooser -->
-  <form>
-    <div>
-      <label for="number">number</label>
-      <input id="number" type="number" min="5" max="10">
-    </div>
 
     <div>
-      <label for="number">number step2</label>
-      <input id="number" type="number" min="0" max="10" step="2">
+      <label for="date">day, month, year</label>
+      <!-- month, day, year -->
+      <input id="date" type="date">
     </div>
-  </form>
 
-  <hr>
-  <!-- search input -->
-  <form>
+    <hr>
     <div>
-      <label for="search">search</label>
-      <input id="search" type="search">
+      <label for="month">month, year</label>
+      <!-- month, year -->
+      <input id="month" type="month">
     </div>
-  </form>
 
-  <hr>
-  <!-- url input -->
-  <form>
+    <hr>
     <div>
-      <label for="url">url</label>
-      <input id="url" type="url">
+      <label for="time">time</label>
+      <!-- hour, min, am/pm -->
+      <input id="time" type="time">
     </div>
-  </form>
 
-  <hr>
-  <!-- hidden input: if i dont want to show the user the info but i wanna send it with the form to the backend -->
-  <form>
+    <hr>
     <div>
-      <label for="hidden">hidden</label>
-      <input id="hidden" type="hidden">
+      <label for="datetime">dateime-local</label>
+      <!-- month, day, year, hour, min, am/pm -->
+      <input id="datetime" type="datetime-local">
     </div>
+
+    <hr>
+    <div>
+      <label for="week">week</label>
+      <!-- week, from and to -->
+      <input id="week" type="week">
+    </div>
+
   </form>
 
 </body>
